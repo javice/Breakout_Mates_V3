@@ -45,7 +45,7 @@ class Paddle:
 class Ball:
     def __init__(self):
         self.rect = pygame.Rect(WIDTH // 2 - BALL_RADIUS, HEIGHT // 2 - BALL_RADIUS, BALL_RADIUS * 2, BALL_RADIUS * 2)
-        self.speed = [4, -4]
+        self.speed = [3, -3]
 
     def move(self):
         self.rect.x += self.speed[0]
