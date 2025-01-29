@@ -30,7 +30,7 @@ clock = pygame.time.Clock()
 class Paddle:
     def __init__(self):
         self.rect = pygame.Rect(WIDTH // 2 - PADDLE_WIDTH // 2, HEIGHT - 50, PADDLE_WIDTH, PADDLE_HEIGHT)
-        self.speed = 0
+        self.speed = [3,3]
 
     def move(self):
         self.rect.x += self.speed
