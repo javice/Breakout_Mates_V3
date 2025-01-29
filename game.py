@@ -33,7 +33,9 @@ class Paddle:
         self.speed = [3,3]
 
     def move(self):
-        self.rect.x += self.speed
+        if not isinstance(self.speed, list):
+            self.speed = [self.speed, 0]
+        self.rect.x += self.speed[0]
         if self.rect.left < 0:
             self.rect.left = 0
         if self.rect.right > WIDTH:
